@@ -1,0 +1,8 @@
+.env*
+!.env.example
+*.sqlite
+__pycache__
+src/temp/*
+!src/temp/.gitkeep
+.watch.lock
+.DS_*

@@ -1,0 +1,6 @@
+python-dotenv
+dnspython
+yoyo-migrations
+requests
+pygit2
+psutil

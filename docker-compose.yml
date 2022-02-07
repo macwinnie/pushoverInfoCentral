@@ -1,0 +1,18 @@
+---
+
+version: '3'
+
+services:
+
+  InfoCentral:
+    image:       devopsansiblede/python:latest
+    restart:     always
+    working_dir: /project
+    command:     sleep infinity
+    environment:
+      START_CRON: 1
+    volumes:
+      - ./src:/project
+      - ./cron:/etc/cron.d/docker
+
+...
