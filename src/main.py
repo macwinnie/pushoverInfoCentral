@@ -18,6 +18,7 @@ db = database.db()
 import pushover
 po = pushover.pushover()
 po.setDB( db )
+po.startupMsg()
 
 ###
 ## import system libraries

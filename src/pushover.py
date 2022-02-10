@@ -115,6 +115,9 @@ class pushover:
         for user in self.users:
             self.message( message=message, user=user, title=title, priority=2, expire=expire, retry=retry, device=device, sound=sound, url=url, url_title=url_title, attachment=attachment, timestamp=timestamp )
 
+    def startupMsg( self ):
+        self.messageAll( 'InfoCentral started.' )
+
     def message( self, message, user, title=None, priority=0, expire=None, retry=None, device=None, sound=None, url=None, url_title=None, attachment=None, timestamp=None ):
 
         apiUrl = self.baseUrl.format( location="messages.json" )
